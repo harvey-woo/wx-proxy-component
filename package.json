@@ -1,0 +1,11 @@
+{
+  "name": "wx-proxy-component",
+  "version": "0.1.0",
+  "description": "为你提供一个替代小程序Component的更好的组件构造工厂",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
