@@ -6,15 +6,24 @@
 ## 安装
 - 基于webpack以及一些构建环境
 ```javascript
-  import Conponent from 'proxy-component'
+  import Conponent from 'wx-proxy-component'
+  Component({
+    //...
+  })
 ```
-- 基于小程序web开发工具原有构建，直接下载 **dist/wx-proxy-component.js** 复制项目后，通过 `require` 进行引用 
+- 基于小程序web开发工具原有构建，直接下载 **dist/wx-proxy-component.js** 复制到项目后，通过 `require` 进行引用 
+```javascript
+  const wxProxy = require('../../utils/wx-proxy-component');
+  wxProxy.Component({
+    //...
+  })
+````
 
 ## 使用
 大部分api与原生的Component一致，请参考微信小程序的开发文档，此文档只提供不一样的部分
 ### 基本用法
 ```javascript
-import Component from 'proxy-component'
+import Component from 'wx-proxy-component'
 Component({
   // 初始化的数据
   data: {},
