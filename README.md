@@ -50,4 +50,40 @@ Component({
   }
 })
 ```
+注意的是，属性是可以深度赋值的，只要是proxy-component的实例，都会触发更新，这意味着，你只需要像一般的处理数据的方式处理实例，实例就会将数据周期性更新到视图上
 
+## watch
+proxy-component 提供了watch和$watch函数，你可以使用它来监听数据的变动，并作出相应的行为
+```javascript
+Component({
+  data: { foo: 1 },
+  watch: {
+    foo(v, oV) {
+      console.log(`foo 从 ${oV} 变成了 ${v}`)
+    }
+  },
+  methods: {
+    onTap() {
+      this.bar = 2
+    }
+  }
+})
+```
+具体api，请参照vue的watch
+
+## computed
+proxy-component 还提供了computed，用于对数据变化来映射到具体的成员变化
+```javascript
+Component({
+  data: {
+    foo: 'foo',
+    bar: 'bar'
+  }
+  computed: {
+    foobar() {
+      return `${this.foo} ${this.bar}` 
+    }
+  }
+})
+```
+具体api，仍然是参考vue
