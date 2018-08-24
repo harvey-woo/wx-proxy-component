@@ -22,6 +22,12 @@
 ## 使用
 大部分api与原生的Component一致，请参考微信小程序的开发文档，此文档只提供不一样的部分
 ### 基本用法
+```json
+// 如果是页面组件，需要加上usingComponent
+{
+  "usingComponents": {}
+}
+```
 ```javascript
 import Component from 'wx-proxy-component'
 Component({
