@@ -6,7 +6,7 @@
 ## 安装
 - 基于webpack以及一些构建环境
 ```javascript
-  import Conponent from 'wx-proxy-component'
+  import Component from 'wx-proxy-component'
   Component({
     //...
   })
@@ -79,7 +79,7 @@ Component({
   },
   methods: {
     onTap() {
-      this.bar = 2
+      this.foo = 2
     }
   }
 })
